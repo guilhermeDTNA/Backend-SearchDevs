@@ -10,7 +10,7 @@ const server = http.Server(app);
 
 setupWebsocket(server);
 
-mongoose.connect('mongodb://guilherme:starwars6@cluster0-shard-00-00-ihnuw.mongodb.net:27017,cluster0-shard-00-01-ihnuw.mongodb.net:27017,cluster0-shard-00-02-ihnuw.mongodb.net:27017/banco?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', {
+mongoose.connect('Link do cluster do MongoDB', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });
